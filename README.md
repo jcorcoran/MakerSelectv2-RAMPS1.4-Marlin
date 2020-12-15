@@ -8,15 +8,16 @@ X, Y, E - MOONS C17HD40102-01N
 Z - 2x MOONS C17HD6039-06N
 
 ## Control / Electronics
-RAMPS 1.4 
-DRV8825 stepper drivers
-FDP6035 MOSFET driving the heated bed - FET on the RAMPS 1.4 was getting uncomfortably warm. Alternatively 
-DRV8825 on X, Y, E (1/32 steps)
-A4988 on Z, (1/16 steps)
+   * RAMPS 1.4 
+   * FDP6035 MOSFET (because I had one lying around) driving the heated bed
+     FET on the RAMPS 1.4 was getting uncomfortably warm. 
+   * DRV8825 on X, Y, E (1/32 steps)
+   * A4988 on Z, (1/16 steps)
+   * Stock LCD
 
 ## Extruder
-Micro Swiss all metal hotend for Wanhao i3
-
+   * Micro Swiss all metal hotend for Wanhao i3
+   * [40T Extruder drive feeder gear](https://www.amazon.com/gp/product/B00ZZRI0DC)
 
 # Marlin 3D Printer Firmware
 https://github.com/MarlinFirmware/Marlin
