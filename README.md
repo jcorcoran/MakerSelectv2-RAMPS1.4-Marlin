@@ -5,7 +5,7 @@ The stock configuration of this printer had voltage on male header pins for the 
 
 ## Stepper Motors (Stock)
 X, Y, E - MOONS C17HD40102-01N
-Z - 2x MOONS C17H06039-06N
+Z - 2x MOONS C17HD6039-06N
 
 ## Control / Electronics
 RAMPS 1.4 
