@@ -552,14 +552,14 @@
  *          TMC5130, TMC5130_STANDALONE
  * :['A4988', 'DRV8825', 'LV8729', 'L6470', 'TB6560', 'TB6600', 'TMC2100', 'TMC2130', 'TMC2130_STANDALONE', 'TMC2208', 'TMC2208_STANDALONE', 'TMC26X', 'TMC26X_STANDALONE', 'TMC2660', 'TMC2660_STANDALONE', 'TMC5130', 'TMC5130_STANDALONE']
  */
-//#define X_DRIVER_TYPE  A4988
-//#define Y_DRIVER_TYPE  A4988
-//#define Z_DRIVER_TYPE  A4988
+#define X_DRIVER_TYPE  DRV8825
+#define Y_DRIVER_TYPE  DRV8825
+#define Z_DRIVER_TYPE  A4988
 //#define X2_DRIVER_TYPE A4988
 //#define Y2_DRIVER_TYPE A4988
 //#define Z2_DRIVER_TYPE A4988
 //#define E0_DRIVER_TYPE A4988
-//#define E1_DRIVER_TYPE A4988
+#define E1_DRIVER_TYPE DRV8825
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
 //#define E4_DRIVER_TYPE A4988
@@ -612,7 +612,8 @@
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 4000, 500 }
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.0, 80.0, 400.0, 96.25 } // 1/16 microsteps
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { (80.0 * 2.0), (80.0 * 2.0), 400.0, (96.25 * 2.0) } // 1/32 microsteps on X, Y, E
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { (80.0 * 2.0), (80.0 * 2.0), 400.0, (96.25 * 2.0) } // 1/32 microsteps on X, Y, E (stock extruder filament gear)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { (80.0 * 2.0), (80.0 * 2.0), 400.0, (86.55575 * 2.0) } // 1/32 microsteps on X, Y, E (stock extruder filament gear)
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -649,8 +650,8 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 10.0 //old custom val was 8.0
-#define DEFAULT_YJERK                 10.0 //old custom val was 8.0 
+#define DEFAULT_XJERK                  8.0 //old custom val was 8.0
+#define DEFAULT_YJERK                  8.0 //old custom val was 8.0 
 #define DEFAULT_ZJERK                  0.3 //old custom val was 0.4 
 #define DEFAULT_EJERK                  5.0
 
@@ -1661,6 +1662,9 @@
 // http://reprap.org/wiki/RepRapDiscount_Full_Graphic_Smart_Controller
 //
 #define REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+#define ST7920_DELAY_1 DELAY_NS(0)
+#define ST7920_DELAY_2 DELAY_NS(400)
+#define ST7920_DELAY_3 DELAY_NS(0)
 
 //
 // ReprapWorld Graphical LCD
