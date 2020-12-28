@@ -388,9 +388,9 @@
   //#define DEFAULT_Kd 440
 
   // Micro Swiss all metal hotend on Ramps 1.4
-  #define DEFAULT_Kp 20.44
-  #define DEFAULT_Ki 1.11
-  #define DEFAULT_Kd 93.77
+  #define DEFAULT_Kp 28.86
+  #define DEFAULT_Ki 1.79
+  #define DEFAULT_Kd 116.44
 
 #endif // PIDTEMP
 
