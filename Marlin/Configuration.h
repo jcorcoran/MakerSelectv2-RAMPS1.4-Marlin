@@ -440,10 +440,10 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  //Maker Select v2 - PID AutoTune 6/10/17 w/ stock bed driven by FDP6035 MOSFET
-  #define DEFAULT_bedKp 286.97
-  #define DEFAULT_bedKi 54.73
-  #define DEFAULT_bedKd 376.15
+  //Maker Select v2 - PID AutoTune 12/27/20 w/ stock bed driven by FDP6035 MOSFET
+  #define DEFAULT_bedKp 327.58
+  #define DEFAULT_bedKi 64.50
+  #define DEFAULT_bedKd 415.94
 #endif // PIDTEMPBED
 
 // @section extruder
