@@ -13,8 +13,22 @@ The stock configuration of this printer had voltage on male header pins for the 
 * DRV8825 stepper drivers on X, Y, E (1/32 steps)
 * A4988 stepper driver on Z, (1/16 steps)
 * SN04-N proximity sensor for auto bed leveling
-* Stock LCD - wired to [RAMPS LCD adapter](https://robotdyn.com/pub/media/0G-00005284==RAMPS1_4-adapter/DOCS/PINOUT==0G-00005284==RAMPS1.4-adapter.jpg)
-  Note, this wiring can be simplified using a firmware mod. [similar to that used in the SKR fork](https://github.com/jcorcoran/MakerSelectv2-SKR1.3-Marlin2.0/blob/main/Marlin/Marlin/src/pins/lpc1768/pins_BTT_SKR_V1_3.h#L293)
+* Stock LCD - wired to [RAMPS LCD adapter](https://robotdyn.com/pub/media/0G-00005284==RAMPS1_4-adapter/DOCS/PINOUT==0G-00005284==RAMPS1.4-adapter.jpg)  
+  
+  ```
+               _____
+          GND | 1 2 | 5V
+     (BEEPER) | 3 4 | RESET
+    (BTN_ENC) | 5 6   (LCD_D4)
+    (BTN_EN2) | 7 8 | (LCD_EN)
+    (BTN_EN1) | 9 10| (LCD_RS)
+               -----
+                LCD
+  ```
+  
+  Note, this wiring can be simplified using a firmware mod, so that only one EXP connector needs to be wired into w/ a single ribbon cable.
+  [similar to that used in the SKR fork](https://github.com/jcorcoran/MakerSelectv2-SKR1.3-Marlin2.0/blob/main/Marlin/Marlin/src/pins/lpc1768/pins_BTT_SKR_V1_3.h#L293)
+
 
 ## Extruder
 Micro Swiss all metal hotend for Wanhao i3
