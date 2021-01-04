@@ -1,5 +1,5 @@
 # Hardware configuration
-This project is the Marlin firmware configuration for a Monoprice Maker Select v2.1 (https://www.monoprice.com/product?p_id=13860) 3D printer with after market customizations.
+This project is the Marlin firmware configuration for a [Monoprice Maker Select v2.1](https://www.monoprice.com/product?p_id=13860) 3D printer with after market customizations.
 
 The stock configuration of this printer had voltage on male header pins for the extruder fan. While performing maintenance, with the fan unplugged, 12VDC  from the fan header pins contacted the chassis (grounded). This in turn blew out stepper drivers on the Melzi board. The driver chips are soldered directly to the main PCB, so instead of replacing the whole PCB ($$$) or getting the hot air rework station warmed up, I decided to do a complete conversion of the control electronics to a RAMPS 1.4 board.
 
