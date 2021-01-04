@@ -5,7 +5,7 @@ The stock configuration of this printer had voltage on male header pins for the 
 
 ## Stepper Motors (Stock)
 * X, Y, E - MOONS C17HD40102-01N
-* Z - 2x MOONS C17H06039-06N
+* Z - 2x MOONS C17HD6039-06N
 
 ## Control / Electronics
 * RAMPS 1.4 
@@ -13,6 +13,8 @@ The stock configuration of this printer had voltage on male header pins for the 
 * DRV8825 stepper drivers on X, Y, E (1/32 steps)
 * A4988 stepper driver on Z, (1/16 steps)
 * SN04-N proximity sensor for auto bed leveling
+* Stock LCD - wired to [RAMPS LCD adapter](https://robotdyn.com/pub/media/0G-00005284==RAMPS1_4-adapter/DOCS/PINOUT==0G-00005284==RAMPS1.4-adapter.jpg)
+  Note, this wiring can be simplified using a firmware mod. [similar to that used in the SKR fork](https://github.com/jcorcoran/MakerSelectv2-SKR1.3-Marlin2.0/blob/main/Marlin/Marlin/src/pins/lpc1768/pins_BTT_SKR_V1_3.h#L293)
 
 ## Extruder
 Micro Swiss all metal hotend for Wanhao i3
